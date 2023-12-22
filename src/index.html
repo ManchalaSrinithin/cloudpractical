@@ -1,18 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        header{
+            background-color: lightseagreen;
+        }
+        .qsb-header-container {
+    padding: 70px 0 39px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(180deg,#f5f4fa,rgba(251,251,253,0));
+}
+        .qsbWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Satoshi";
+    font-family: var(--font-family,"Satoshi");
+        
+}
+.qsbWrapper .qsb {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 25px 60px rgba(113,106,147,.2);
+    border-radius: 40px;
+}
+.qsb-header-container{
+    background-color: lightgoldenrodyellow;
+}
+.premium-collection-main .premium-swiper-wrap .swiper-container .swiper-button-next {
+    right: -30px;
+}
+
+    </style>
 </head>
-
 <body>
-  <main>
-    <h1>Iam doing the practical from the vs code .JavaScript App</h1>
-    <p>Azure practicals</p>
-  </main>
+    <header class="p-3 text-bg">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <b><li><a href="#"><img src="./logo.jpg" height="37px" style="border-radius: 60px;"></a></li></b>
+                <b><li><a href="#" class="nav-link px-2 text-white">GLOW PURE</a></li></b>
+                <li><a href="#" class="nav-link px-2 text-white">Jobs</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Companies</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Resume Maker</a></li>
+            </ul>
+            <div class="text-end">
+              <a href="loginpage1.html"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+              <button type="button" class="btn btn-warning">Sign-up</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item">
+            <img src="./grow.png" svg class="bd-placeholder-img" width="100%" height="380px">
+              <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> -->
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1>Top companies Hiring now..</h1>
+                  <p class="opacity-75">Top mncs are hiring today.Sign in Now for more opportunities.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Sign in</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item active">
+                <img src="./job1.jpeg" svg class="bd-placeholder-img" width="100%" height="380px">
+              <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> -->
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1 style="color: whitesmoke;">Glow Pure</h1>
+                  <p style="color: whitesmoke;">I don't just find jobs, I create opportunities.Click below to know more..</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="qsb-header-container"><h1 class="qsb-title">Find your dream job now</h1><div class="qsb-byLine">5 lakh+ jobs for you to explore</div></div>
+        <div class="container px-4 py-5" id="featured-3">
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                  <img src="./jpmorgan.jpg"  width="100px" height="30px">
+                  <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg> -->
+                </div>
+                <h3 class="fs-2 text-body-emphasis">JPMorgan Chase Bank</h3>
+                <p>JPMorgan Chase is one of the world's oldest, largest and best-known financial institutions. With a history that traces our roots to 1799 in New York City, we carry forth the innovative spirit of our heritage firms in our global operations in over 60 countries. Our firm’s culture is rooted in our core principles. Here, you will join diverse and inclusive teams that support each other and empower you to do your best work.</p>
+                <a href="#" class="icon-link">
+                  Apply Now
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+              </div>
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                  <img src="./icic logo.jpg"  width="100px" height="80px">
+                  <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg> -->
+                </div>
+                <h3 class="fs-2 text-body-emphasis">ICICI Bank</h3>
+                <p>ICICI Bank is a leading private sector bank in India. The Bank’s consolidated total assets stood at Rs. 14.76 trillion at September 30, 2020. ICICI Bank currently has a network of 5,288 branches and 13,875 ATMs across India.</p>
+                <a href="#" class="icon-link">
+                  Apply Now
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+              </div>
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                  <img src="./amazon.jpg"  width="100px" height="70px">
+                  <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Amazon</h3>
+                <p>Amazon is guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking. We are driven by the excitement of building technologies, inventing products, and providing services that change lives. We embrace new ways of doing things, make decisions quickly, and are not afraid to fail. We have the scope and capabilities of a large company and the spirit and heart of a small one.</p>
+                <a href="#" class="icon-link">
+                  Apply Now
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+              </div>
+              <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+            </div>
+          </div>
+        <div class="container">
+            <footer class="py-5">
+              <img src="./logo.jpg" height="37px" style="border-radius: 60px; margin-bottom:10px ;"> GLOW PURE
+              <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About us</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Careers</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Employer home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sitemap</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Credits</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-6 col-md-2 mb-3">
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Help center</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Summons/Notices</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Grievances</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Report issue</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-6 col-md-2 mb-3">
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy policy</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms & conditions</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Fraud alert</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-md-5 offset-md-1 mb-3">
+                  <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                      <label for="newsletter1" class="visually-hidden">Email address</label>
+                      <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                      <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+          
+              <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2022-2023 GlowPure Company, Inc limited. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                  <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                  <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                  <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+                </ul>
+              </div>
+            </footer>
+          </div>
+      </main>
+      
 </body>
-
 </html>

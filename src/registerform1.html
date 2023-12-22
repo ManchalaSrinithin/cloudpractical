@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>registration form | Glowpure</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<script src="safety.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<style media="screen">
+nav{
+	position:fixed;
+  background: #022f69;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: #fff;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: Right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: -0.45% 10px;
+}
+nav ul li a{
+  color: #fff;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+}
+a.active,a:hover{
+  background: #fff;
+  transition: .5s;
+  color: #022f69;
+}
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  text-decoration: none;
+
+}
+#check{
+  display: none;
+}
+@media (max-width: 968px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 875px){
+  .checkbtn{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #27282c;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display:block;
+    margin: 50px 0;
+    line-height: 30px;
+
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover, a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+.side {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 50;
+  left: 0;
+  background-color: #FEFBF6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px ;
+  margin-top: 80px;
+  border-radius:25px;
+}
+
+#mySidenav{
+
+}
+
+.side a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.side a:hover {
+  color: #f1f1f1;
+}
+
+.side .closebtn {
+  position: absolute;
+  right: 25px;
+  font-size: 25px;
+  margin-top: -10vh;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+   background-color:#F3DED5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 13px;
+  margin: 0;
+
+}
+
+input, textarea, select, button {
+  font-family: arial;
+  color: #333;
+  font-size: 14px; }
+
+p, h1, h2, h3, h4, h5, h6, ul {
+  margin: 0; }
+
+img {
+  max-width: 100%;
+        margin-top: 47px;
+    }
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0; }
+
+a:hover {
+  text-decoration: none; }
+
+:focus {
+  outline: none; }
+
+.wrapper {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center; }
+
+.inner {
+  padding: 20px;
+  background: #fff;
+
+  max-height: 100%;
+  margin: auto;
+  display: flex; }
+  .inner .image-holder {
+    width: 50%;
+  height: 100%;
+padding-top: 90px;}
+  .inner form {
+    width: 50%;
+    padding-top: 36px;
+    padding-left: 45px;
+    padding-right: 45px; }
+  .inner h3 {
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 28px; }
+
+.form-group {
+  display: flex; }
+  .form-group input {
+    width: 50%; }
+    .form-group input:first-child {
+      margin-right: 25px; }
+
+.form-wrapper {
+  position: relative; }
+  .form-wrapper i {
+    position: absolute;
+    bottom: 9px;
+    right: 0; }
+
+.form-control {
+  border: 1px solid #333;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  display: block;
+  width: 100%;
+  height: 30px;
+  padding: 0;
+  margin-bottom: 25px;
+}
+.temp{
+  border: 1px solid #333;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  display: block;
+  width: 15%;
+  height: 30px;
+  padding: 0;
+  margin-bottom: 25px;
+}
+  .form-control::-webkit-input-placeholder {
+    font-size: 14px;
+    color: gray;
+    font-family: arial; }
+
+select {
+  font-size: 14px;
+  font-family: arial;
+  cursor: pointer;
+  padding-left: 20px;
+  color: gray;
+}
+  select option[value=""][disabled] {
+    display: none; }
+
+button {
+  border: none;
+  width: 164px;
+  height: 51px;
+  margin: auto;
+  margin-top: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: #333;
+  font-size: 15px;
+  color: #fff;
+}
+button:hover{
+  background: or;
+}
+
+@media (max-width: 767px) {
+  .inner {
+    display: block; }
+    .inner .image-holder {
+      width: 100%; }
+    .inner form {
+      width: 100%;
+      padding: 40px 0 30px; }
+
+  button {
+    margin-top: 60px; } }
+
+</style>
+</head>
+<body>
+    <header class="p-3 text-bg">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <b><li><a href="#"><img src="./logo.jpg" height="37px" style="border-radius: 60px;"></a></li></b>
+                <b><li><a href="#" class="nav-link px-2 text-white">GLOW PURE</a></li></b>
+                <li><a href="#" class="nav-link px-2 text-white">Jobs</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Companies</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Resume Maker</a></li>
+            </ul>
+            <div class="text-end">
+              <buttc:\Users\Srinithin\OneDrive\Desktop\Full Stack Development EY\Html practicals\practice github\logo.jpgon type="button" class="btn btn-outline-light me-2">Login</button>
+              <button type="button" class="btn btn-warning">Sign-up</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+
+
+<div id="mySidenav" class="side">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#10094;</a>
+  <a href="index.html" ><p class="side1" style="font-size:17px; padding-left:-1vw;"><i class="fa-solid fa-house" style="font-size:22px; padding-left:0.6vw;"></i><br>Home</p></a>
+<br>
+<br>
+  <a href="#" ><p class="side1" style="font-size:17px; padding-left:-1vw;"><i class="fa-solid fa-user" style="font-size:22px; padding-left:0.6vw;"></i><br>Profile</p></a>
+<br>
+<br>
+  <a href="#" ><p class="side1" style="font-size:17px; padding-left:-1vw;"><i class="fa-solid fa-message" style="font-size:22px; padding-left:0.6vw;"></i><br>Messege</p></a>
+<br>
+<br>
+  <a href="contactus.html" ><p class="side1" style="font-size:17px; padding-left:-1vw;"><i class="fa-solid fa-comment" style="font-size:22px; padding-left:0.6vw;"></i><br>Feedback</p></a>
+<br>
+<br>
+  <a href="#" ><p class="side1" style="font-size:17px; padding-left:-1vw;"><i class="fa-solid fa-magnifying-glass-chart" style="font-size:22px; padding-left:0.6vw;"></i><br>Analysis</p></a>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<span style="font-size:35px;cursor:pointer;position:fixed;margin-top:10vh;background-color:#3FA796;border-radius:0px 10px 10px 0px" onclick="openNav()">&#10095;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "150px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+<div class="wrapper" style="background-image: url('');">
+<div class="inner">
+<div class="image-holder">
+<img src="https://thumbs.dreamstime.com/b/side-view-businessman-climbing-abstract-drawn-stairs-business-sketch-concrete-background-career-development-finance-117575056.jpg" alt="image">
+</div>
+    <form name="myForm" action="yashwanth.html" onsubmit="return validateForm()" method="post">
+<h3>Registration Form</h3>
+  <h4>Name:</h4>
+
+<div class="form-group">
+
+<input type="text" placeholder="First Name" class="form-control" required>
+<input type="text" placeholder="Last Name" class="form-control" required>
+</div>
+<h4>Email:</h4>
+<div class="form-wrapper">
+<input type="email" placeholder="abc@gmail.com" class="form-control" required>
+
+</div>
+<div class="form-wrapper">
+<select class="form-control" required>
+<option value="" disabled selected>Work Status </option>
+<option value="Fresher">Fresher</option>
+<option value="Employee">Employee</option>
+</select>
+</div>
+
+<h4>Mobile Number:</h4>
+<div class="form-wrapper">
+  <div class="form-group">
+<div class="temp">
+  <input type="text" placeholder="+91" class="form-control" required>
+</div>
+
+  <input type="tel"  id="phone" placeholder="1234567890" class="form-control" pattern="[789][0-9]{9}"  required>
+  </div>
+</div>
+<h4>Location:</h4>
+<div class="form-wrapper">
+<input type="text" placeholder="State & District" class="form-control" required>
+
+<h4>Create Password:</h4>
+<div class="form-wrapper">
+<input type="password" placeholder="Password" class="form-control" minlength="8" required>
+
+</div>
+<div class="form-wrapper">
+<input type="password" placeholder="Confirm Password" class="form-control" minlength="8" required>
+
+</div>
+<div style="margin-top:0%;"> 
+<a href="yashwanth.html"><button>Sign in</button></a>
+</div>
+</form>
+ 
+</div>
+
+</body>
+</html>
